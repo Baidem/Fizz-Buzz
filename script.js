@@ -7,16 +7,16 @@ stopButton.addEventListener("click", stopRun);
 let index = 1;
 let pass = true;
 
-function funFizzBuzz() { /* La fonction est appelée avec le bouton -Start to play-
-    La fonction est cadencée en boucle par interval de temps avec la méthode setInterval
-    La variable cursor est défini par : cursor = index + 100. Pour déterminer des session de 100 unités.
-        Chaque boucle test la variable index
-        Si est modulo de 3 : "Fizz" est save dans la variable tellMe
-        Si est modulo de 5 : tellMe + "Buzz" est save dans la variable tellMe
-        Si index == cursor : c'est la fin session, setInterval est mise en pause avec clearInterval
-    On peut aussi mettre la pause en le bouton -Stop- qui appelle la fonction stopRun()
-    On relance la boucle avec le bouton  -Start to play- */
-    if (pass == true) { // variable pass pour debugger playButton qui, quand on le spam, réduit l'interval et inactive le clearInterval
+function funFizzBuzz() { /* The function is called with the -Start to play- button
+    The function is timed in a loop by time interval with the setInterval method
+    The variable cursor is defined by: cursor = index + 100. To determine sessions of 100 units.
+        Each loop tests the index variable
+        If is modulo 3: "Fizz" is saved in the tellMe variable
+        If is modulo 5: tellMe + "Buzz" is saved in the tellMe variable
+        If index == cursor: it's session end, setInterval is paused with clearInterval
+    You can also put the pause in the -Stop- button which calls the stopRun() function
+    We restart the loop with the button -Start to play- */
+    if (pass == true) { // variable pass for debug playButton which, when spammed, reduces the interval and disables the clearInterval.
         pass = false;
         let cursor = index + 100;
         intervalId = setInterval(function(){
