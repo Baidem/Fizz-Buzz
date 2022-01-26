@@ -1,48 +1,31 @@
 * {
-	--base-blue: #1877F2;
-	--base-cherry: #F3425F;
-	--base-grape: #9360F7;
-	--base-lemon: #F7B928;
-	--base-lime: #45BD62;
-	--base-pink: #FF66BF;
-	--base-seafoam: #54C7EC;
-	--base-teal: #2ABBA7;
-	--base-tomato: #FB724B;
-	--blue-link: #4599FF;
-	--font-family-apple: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
-	--font-family-code: ui-monospace, Menlo, Consolas, Monaco, monospace;
-	--font-family-default: Helvetica, Arial, sans-serif;
-	--font-family-segoe: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
-	--dataviz-primary-2: rgb(134,218,255);
-	--dataviz-primary-3: rgb(95,170,255);
-	--dataviz-secondary-1: rgb(129,77,231);
-	--dataviz-secondary-2: rgb(168,124,255);
-	--dataviz-secondary-3: rgb(219,26,139);
-	--dataviz-supplementary-1: rgb(255,122,105);
-	--dataviz-supplementary-2: rgb(241,168,23);
-	--dataviz-supplementary-3: rgb(49,162,76);
-	--dataviz-supplementary-4: rgb(228,230,235);
+    font-family: ui-monospace, Menlo, Consolas, Monaco, monospace;
+    font-weight: bold;
+    color: #27124f;
 }
+
 body {
-    background-color: var(--dataviz-primary-2);
+    background-color: rgb(134,218,255);
 }
 header {
     text-align: center;
 }
-button {
-    background-color: var(--dataviz-secondary-2);
-    font-weight: bold;
-}
-* {
-    font-family: var(--font-family-code);
-}
 .playground {
     padding: 20px;
     border-radius: 8px;
-    border-color: var(--dataviz-secondary-2);
-    border: solid 3px;
-    background-color: var(--dataviz-supplementary-3);
+    border: solid 3px #27124f;
+    background-color: rgb(49,162,76);
     text-align: center;
     width: 50%;
+    min-height: 173px;
     margin: auto;
+    box-shadow: 1px 1px 2px #2323237e;
+}
+button {
+    background-color: rgb(168,124,255);
+}
+#text {
+    text-align: left;
+    color: rgb(228,230,235);
+    text-shadow: 1px 1px 2px #2323237e;
 }
